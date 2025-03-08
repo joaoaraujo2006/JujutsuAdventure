@@ -40,7 +40,7 @@ class gameFase extends Phaser.Scene { // define movChar como extensão da cena d
         this.load.image('gameover', 'assets/gameover.png')
         this.load.image('win', 'assets/win.png')
         this.load.spritesheet('walk',
-            'assets/gojoWalk.png',
+            'assets/GojoWalk.png',
             { frameWidth: 35, frameHeight: 64 }
         );
         this.load.spritesheet('parado',
@@ -108,31 +108,6 @@ class gameFase extends Phaser.Scene { // define movChar como extensão da cena d
         this.physics.add.collider(player, platforms);
 
         this.physics.add.collider(player, plataformas);
-        this.anims.create({
-            key: 'stoped',
-            frames: this.anims.generateFrameNumbers('parado', { start: 0, end: 0 }),
-            frameRate: 10,
-            repeat: -1
-        })
-        this.anims.create({
-            key: 'right',
-            frames: this.anims.generateFrameNumbers('walk', { start: 0, end: 7 }),
-            frameRate: 10,
-            repeat: -1
-        });
-        this.anims.create({
-            key: 'left',
-            frames: this.anims.generateFrameNumbers('left', { start: 0, end: 7 }),
-            frameRate: 15,
-            repeat: -1
-        });
-
-        this.anims.create({
-            key: 'jump',
-            frames: this.anims.generateFrameNumbers('jump', { start: 0, end: 3 }),
-            frameRate: 15,
-            repeat: -1
-        });
 
         stars = this.physics.add.group({
             key: 'star',
