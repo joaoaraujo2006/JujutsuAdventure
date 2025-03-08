@@ -149,7 +149,7 @@ class gameFase extends Phaser.Scene { // define movChar como extensão da cena d
             player.setVelocityX(-160);
             direita = false; // Mude a direção para esquerda
             if (animacaoEx == false) {
-                player.anims.play('right');
+                player.anims.play('right', true);
                 player.setFlipX(true); // Inverte o personagem para a esquerda
             }
         }
@@ -157,7 +157,7 @@ class gameFase extends Phaser.Scene { // define movChar como extensão da cena d
             player.setVelocityX(160);
             direita = true; // Mude a direção para direita
             if (animacaoEx == false) {
-                player.anims.play('right');
+                player.anims.play('right', true);
                 player.setFlipX(false); // Remove a inversão (faz o personagem olhar para a direita)
             }
         }
