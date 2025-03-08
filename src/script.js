@@ -38,7 +38,7 @@ class gameFase extends Phaser.Scene { // define movChar como extensão da cena d
         this.load.audio('explosionSound', 'assets/corte.mp3');
         this.load.audio('risada', 'assets/risada.mp3');
         this.load.image('gameover', 'assets/gameover.png')
-        this.load.image('win', 'assets/win.png')
+        this.load.image('win', 'assets/Win.png')
         this.load.spritesheet('walk',
             'assets/GojoWalk.png',
             { frameWidth: 35, frameHeight: 64 }
