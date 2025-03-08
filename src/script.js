@@ -39,6 +39,7 @@ class gameFase extends Phaser.Scene { // define movChar como extensão da cena d
         this.load.audio('risada', 'assets/risada.mp3');
         this.load.image('gameover', 'assets/gameover.png')
         this.load.image('win', 'assets/Win.png')
+
     }
 
     create() {

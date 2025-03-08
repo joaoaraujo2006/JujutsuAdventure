@@ -98,7 +98,7 @@ class cutscene extends Phaser.Scene { // define movChar como extensão da cena d
             key: 'stoped',
             frames: this.anims.generateFrameNumbers('parado', { start: 0, end: 0 }),
             frameRate: 15,
-            repeat: -1
+            repeat: 0
         })
         this.anims.create({
             key: 'right',
