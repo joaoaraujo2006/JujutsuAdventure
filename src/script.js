@@ -203,7 +203,7 @@ class gameFase extends Phaser.Scene { // define movChar como extensão da cena d
         }
         else {
             if (animacaoEx == false) {
-                player.anims.play('stoped', true);
+                player.anims.play('parado', true);
             }
             player.setVelocityX(0);
         }
