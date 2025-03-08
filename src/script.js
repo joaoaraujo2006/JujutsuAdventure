@@ -203,7 +203,7 @@ class gameFase extends Phaser.Scene { // define movChar como extensão da cena d
         }
         else {
             if (animacaoEx == false) {
-                player.anims.play('parado', true);
+                player.anims.play('stoped', true);
             }
             player.setVelocityX(0);
         }
@@ -386,7 +386,6 @@ function hitBomb(player, bomb) {
     this.physics.pause();
 
     player.setTint(0xff0000);
-    player.anims.play('');
 
     explosionSound.play();
     musicaAnterior2.stop();
