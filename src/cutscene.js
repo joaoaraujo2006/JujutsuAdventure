@@ -21,11 +21,11 @@ class cutscene extends Phaser.Scene { // define movChar como extensão da cena d
             'assets/gojoStand.png',
             { frameWidth: 35, frameHeight: 64 }
         );
-        this.load.spritesheet('jump',
+        this.load.spritesheet('pular',
             'assets/gojoJump.png',
             { frameWidth: 47, frameHeight: 70 }
         );
-        this.load.spritesheet('left',
+        this.load.spritesheet('esq',
             'assets/gojoLeft.png',
             { frameWidth: 35.5, frameHeight: 64 }
         );
@@ -108,14 +108,14 @@ class cutscene extends Phaser.Scene { // define movChar como extensão da cena d
         });
         this.anims.create({
             key: 'left',
-            frames: this.anims.generateFrameNumbers('left', { start: 7, end: 0 }),
+            frames: this.anims.generateFrameNumbers('esq', { start: 7, end: 0 }),
             frameRate: 15,
             repeat: -1
         });
 
         this.anims.create({
             key: 'jump',
-            frames: this.anims.generateFrameNumbers('jump', { start: 0, end: 0 }),
+            frames: this.anims.generateFrameNumbers('pular', { start: 0, end: 0 }),
             frameRate: 10,
             repeat: -1
         });
