@@ -101,7 +101,7 @@ class gameFase extends Phaser.Scene { // define movChar como extensão da cena d
         plataformas.create(1600, 300, 'plataformas').refreshBody().setScale(0.5);
 
         // ADICIONA O PLAYER 
-        player = this.physics.add.sprite(152, 572, 'parado').setScale(2);
+        player = this.physics.add.sprite(152, 572, 'walk').setScale(2);
 
         player.setBounce(0.2);
         player.setCollideWorldBounds(true);
