@@ -280,7 +280,7 @@ class gameFase extends Phaser.Scene { // define movChar como extensão da cena d
                 this.time.addEvent({
                     delay: 1200, // Tempo em milissegundos (2 segundos)
                     callback: () => {
-                        this.game.scene.restart()
+                        this.scene.restart();
                     },
                 });
     
@@ -369,7 +369,7 @@ function hitBomb(player, bomb) {
             this.time.addEvent({
                 delay: 1200, // Tempo em milissegundos (2 segundos)
                 callback: () => {
-                    this.game.scene.restart()
+                    this.scene.restart();
                 },
             });
 
