@@ -14,7 +14,7 @@ class cutscene extends Phaser.Scene { // define movChar como extensão da cena d
         this.load.image('plataformas', 'assets/plataforma.png');
         this.load.image('titulo', 'assets/titulo.png')
         this.load.spritesheet('walk',
-            'assets/gojoWalk.png',
+            'assets/GojoWalk.png',
             { frameWidth: 35, frameHeight: 64 }
         );
         this.load.spritesheet('parado',
